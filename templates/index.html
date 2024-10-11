@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Two Numbers</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Addition App</h1>
+        <p>Enter two numbers to add them together:</p>
+        
+        <form action="/add" method="get">
+            <label for="a">First number:</label><br>
+            <input type="number" step="any" id="a" name="a" required><br><br>
+            
+            <label for="b">Second number:</label><br>
+            <input type="number" step="any" id="b" name="b" required><br><br>
+            
+            <input type="submit" value="Add Numbers">
+        </form>
+
+        {% if result is not none %}
+        <h2>Result: {{ result }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>

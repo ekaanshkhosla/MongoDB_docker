@@ -1,0 +1,62 @@
+/* Set the overall styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;      /* Vertically center */
+    height: 100vh;            /* Full viewport height */
+    box-sizing: border-box;
+}
+
+/* Style the container (white box) */
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Heading styling */
+h1 {
+    color: #333;
+}
+
+/* Label styling */
+label {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Input field styling */
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Change background color on hover */
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
